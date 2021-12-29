@@ -31,14 +31,4 @@ for (let i = 0; i < 2; i++) {
     }    
 }
 
-for (let i = 0; i < 2; i++) {
-    let a = prompt('What is one of movie did you watch last?', '');
-    let b = +prompt('How much do you rate it', '');
-    if (a != null && a.length < 50 && a != '' && b != null  && b != '') {
-        personalMoviesDB.movies[a] = b;
-    } else {
-        --i;
-    }    
-}
-
 console.log(personalMoviesDB);
